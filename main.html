@@ -7,6 +7,32 @@
 </head>
 
 <body>
+	<h1>Feedback Form</h1>
+	<form id="feedbackForm">
+    <!-- Name input element -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" minlength="3" maxlength="50" required><br>
+
+    <!-- Portfolio input element -->
+    <label for="portfolio">Portfolio:</label>
+    <input type="url" id="portfolio" name="portfolio" required><br>
+
+    <!-- Favorite color selection element -->
+    <label for="favColor">Favorite Color:</label>
+    <select id="favColor" name="favColor" required>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+      <!-- Add more color options here -->
+    </select><br>
+
+    <!-- Likeness slider element -->
+    <label for="likeness">Likeness of the color:</label>
+    <input type="range" id="likeness" name="likeness" min="1" max="100" required><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
